@@ -1,7 +1,7 @@
 import { Hono } from 'hono'
 import { env } from 'hono/adapter'
 import { handle } from 'hono/vercel'
-import { appendTrailingSlash } from "hono/dist/types/middleware/trailing-slash"
+import { appendTrailingSlash } from "hono/trailing-slash"
 import { parseWWWAuthenticate, fetchToken } from "./utils"
 import { routeByHosts, routes } from "./routes"
 
